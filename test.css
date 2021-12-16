@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.class-section {
+    padding: 64px 0;
+    width: 1000px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.tch-value {
+    background: linear-gradient(180deg, #fff4cd 0, rgba(255, 255, 255, 0) 100%);
+}
+
+.value-container {
+    width: 100%;
+}
+
+.value-container .title {
+    width: 100%;
+    text-align: center;
+    color: #ff6725;
+    font-size: 3vw;
+}
+
+.tch-value .value-container .value-btn-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.tch-value .value-container .value-btn-container .btn-item .btn-name {
+    color: #000;
+    font-weight: 700;
+    background-color: #fff;
+    border: 1px solid #dfdfde;
+    width: 100%;
+    height: 80px;
+    border-radius: 0.25rem;
+    box-shadow: 16px 16px 20px rgb(0 0 0 / 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    padding: 5vh;
+}
+
+.value-content-container .value-content-item {
+    /* display: flex; */
+    width: 100%;
+    display: none;
+}
+
+.value-content-container .value-content-special {
+    display: flex;
+}
+
+.value-content-container .value-content-item .quote {
+    width: 100%;
+    padding-right: 3rem;
+    line-height: 1.6;
+    margin-top: 13%;
+    font-size: 19px;
+    text-align: justify;
+}
+
+
+.value-content-container .value-content-item .value-img1 {
+    background: url(https://partner.thecoffeehouse.com/hr/files/banners/1624978934591.jpeg) center center no-repeat;
+    width: 100%;
+    background-size: 40%;
+    padding-top: 50%;
+    background-size: cover !important;
+    border-radius: 0.25rem;
+}
+
+.value-content-container .value-content-item .value-img2 {
+    background: url(https://partner.thecoffeehouse.com/hr/files/banners/1624978955732.jpeg) center center no-repeat;
+    width: 100%;
+    background-size: 40%;
+    padding-top: 50%;
+    background-size: cover !important;
+    border-radius: 0.25rem;
+}
+
+.value-content-container .value-content-item .value-img3 {
+    background: url(https://partner.thecoffeehouse.com/hr/files/banners/1624978979835.jpeg) center center no-repeat;
+    width: 100%;
+    background-size: 40%;
+    padding-top: 50%;
+    background-size: cover !important;
+    border-radius: 0.25rem;
+}
+
+.value-content-container .value-content-item .value-img4 {
+    background: url(https://partner.thecoffeehouse.com/hr/files/banners/1624979116153.jpeg) center center no-repeat;
+    width: 100%;
+    background-size: 40%;
+    padding-top: 50%;
+    background-size: cover !important;
+    border-radius: 0.25rem;
+}
+
+
+/* ================================================= */
+.content-container {
+
+}
+
+.product__container {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.product__container .product__list--header {
+    width: 100%;
+}
+
+.product__container .product__list--header .title {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+}
+
+.product__list--header .fas {
+    color: #faa515;
+    font-size: 22px;
+}
+
+.product__container .product__list--type {
+    display: flex;
+    /* justify-content: space-around; */
+    /* margin: 0 6%; */
+    /* width: 100%; */
+    justify-content: center;
+}
+
+.product__container .product__list--type .product-menu {
+    padding: 45px 0;
+    width: 94px;
+    margin-right: 45px;
+    /* margin-left: 15px; */
+}
+
+.product__list--type .product-menu .product-menu--image {
+    text-align: center;    
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    border-radius: 50%;
+}
+
+.product__list--type .product-menu .product-menu--image + .product-menu--image {
+}
+
+.product__list--type .product-menu .product-menu--image img {
+    height: 70px;
+}
+
+.product__list--type .product-menu .product-menu--name {
+    font-size: 12px;
+    color: #b2b2b2;
+    text-align: center;
+}
+
+/* Drink  */
+
+.drink__menu {
+    /* display: flex; */
+    margin-left: 15px;
+    display: none;
+}
+
+.drink__menu .drink-item {
+    background-color: #fff;
+    width: 175px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px 0px;
+    /* text-align:center; */
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.drink__menu .drink-menu-link + .drink-menu-link {
+    margin-left: 30px;
+}
+
+.drink-item-container {
+    padding: 0 10px;
+}
+
+.drink__menu .drink-item .drink-item__image {
+}
+
+.drink__menu .drink-item img {
+    width: 155px;
+    padding: 10px 0;
+    border-radius: 15%;
+}
+
+.drink__menu .drink-item .drink-name {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.drink__menu .drink-item .drink-price {
+    display: flex;
+    width: 155px;
+    justify-content: space-between;
+}
+
+.drink__menu .drink-item .drink-price .price {
+    display: flex;
+    align-items: center;
+}
+
+.drink__menu .drink-item .drink-price .fas {
+    color: white;
+    background-color: rgb(250, 140, 22);
+    padding: 8px 9px;
+    border-radius: 50%;
+    font-size: 16;
+}

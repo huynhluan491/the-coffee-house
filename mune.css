@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.class-section {
+    padding: 64px 0;
+    width: 1230px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.footer-menu-container {
+    background: url(https://order.thecoffeehouse.com/_nuxt/img/footer-desktop.727f3a2.png) top center / cover no-repeat;
+    /* height: 180px; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transform: scale(1, 1);
+}
+/* .footer-menu-container::before {
+    background: url(https://www.thecoffeehouse.com/_nuxt/img/footer-desktop.727f3a2.png) top center / cover no-repeat;
+    height: 180px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+} */
+
+.footer-menu-container .footer-menu-logo {
+    margin-left: 15px;
+}
+
+.footer-menu__list {
+    width: 100%;
+    padding-left: 7%;
+}
+
+.footer-menu__list .item-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-menu__list .item-list > li {
+    position: relative;
+    list-style-type: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    width: 20%;
+}
+
+.footer-menu__list .item-list .footer-icon {
+    padding-right: 4px;
+    font-size: 14px;
+}
+
+.footer-menu__list .item-list .menu-main-item .footer-sub-menu::before {
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    opacity: .3;
+    height: 1px;
+    top: 165%;
+}
+
+/* .footer-menu__list .item-list .menu-main-item .menu-main-item{
+    transform: scale(1.5, 1.5);
+} */
+.footer-menu__list .item-list .menu-main-item .menu-main-item::before{
+    background: url(https://www.thecoffeehouse.com/_nuxt/img/footer-desktop.727f3a2.png) top center / cover no-repeat;
+    height: 180px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.footer-menu__list .item-list .footer-sub-menu > li {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.footer-menu__list .item-list .footer-sub-menu {
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    height: 80px;
+}
