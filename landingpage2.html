@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee House</title>
+    <link rel="stylesheet" href="assets/css/full.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/fonticon/themify-icons//themify-icons.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/responsivelanding.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header-container">
+            <div class="container-flex class-section">
+                <a class="header-logo" href=""><img src="https://order.thecoffeehouse.com/_nuxt/img/logo.174bdfd.svg" alt="Logo" class="header-logo-img"></a>
+                <!-- </div> -->
+
+                <!-- Shipper -->
+                <div class="header-shipper">
+                        <img class="shipper-img" src="https://minio.thecoffeehouse.com/images/tch-web-order/Delivery2.png" alt="">
+                        <div class="shipper-content">
+                            <a href=""><h3 class="shipper-title">Giao Hàng</h3></a>
+                            <a href=""><p class="shipper-fill-address">Tại: Nhập địa chỉ giao hàng</p></a>
+                        </div>
+                        <div class="header-icon">
+                            <i class="shipper-icon ti-angle-down"></i>
+                        </div>
+                </div>
+
+                <!-- HEADER MENU -->
+                <div class="header-menu-container">
+                    <ul class="header-menu-list">
+                        <a href="./dathang.html"><li>Đặt Hàng</li></a>
+                        <a href="./lastestnews/coffe2.html"><li>Tin Tức</li></a>
+                        <a href="./cuahang.html"><li>Cửa Hàng</li></a>
+                        <a id="voucherMenu" href="#"><li>Khuyến Mãi</li></a>
+                        <a href="./careers.html"><li>Tuyển Dụng</li></a>
+                    </ul>
+                </div>
+
+                <!-- HEADER ICON -->
+                <div class="header-user-container">
+                    <a href=""><img class="user-picture" src="https://order.thecoffeehouse.com/_nuxt/img/Login.70dc3d8.png" alt=""></a>
+                    <a href=""><img class="user-shopping-cart" src="https://order.thecoffeehouse.com/_nuxt/img/Carticon.373916c.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="space-div1" style="padding-top: 80px;"></div>
+
+        <!-- Banner -->
+
+        <div class="all__slider">
+            <div class="container">
+            <div class="slider__container">
+                <!-- INPUT -->
+                <input class="slider-input" type="radio" name="slider" id="slider__input1" checked />
+                <input class="slider-input" type="radio" name="slider" id="slider__input2" />
+                <input class="slider-input" type="radio" name="slider" id="slider__input3" />
+                <!-- <input class="slider-input" type="radio" name="slider" id="slider__input4" /> -->
+                
+                <!-- IMG -->
+            <div class="slider__imgs">
+                <a href="./dathang.html"><img src="https://minio.thecoffeehouse.com/image/admin/bannerweb(5)_903049.jpg" alt="" class="img-item"></a>
+                <a href="./dathang.html"><img src="https://ecoparker.s3.ap-southeast-1.amazonaws.com/s3fs-public/styles/listing_detail_header/public/nha%20hang/45519673_2220682351539112_7646554049159888896_o_0.jpg?itok=MsMb6ThS" alt="" class="img-item"></a>
+                <a href="./dathang.html"><img src="https://minio.thecoffeehouse.com/image/admin/BANNERWEB(7)_284315.jpg" alt="" class="img-item"></a>
+            </div>
+            
+            <!-- DOTS -->
+            <div class="slider__dots">
+                <label class="dot-item" for="slider__input1"></label>
+                <label class="dot-item" for="slider__input2"></label>
+                <label class="dot-item" for="slider__input3"></label>
+            </div>
+            </div>      
+            </div>
+        </div>
+
+         <!-- Goi y -->
+         <section class="suggest-container">
+            <div class="suggest-content">
+                <div class="suggest-header">
+                    <span class="icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </span>
+                    <a href="#" id="suggestClick" class="suggest-tablinks" onclick="changeTopic(event, 'suggest')">Nhà gợi ý cho bạn</a>
+                    <a href="#" id="nearlyClick" class="suggest-tablinks" onclick="changeTopic(event, 'nearly')">Đặt gần đây</a>
+                </div>
+            </div>
+            <div class="suggest-space" style="padding-bottom: 3%;"></div>
+            <div id="nearly" class="nearly-order">
+                <span class="login-request">Vui lòng đăng nhập để xem đơn hàng gần đây của bạn</span>
+                <div class="suggest-login-modal">
+                    <img src="https://order.thecoffeehouse.com/_nuxt/img/suggest-icon-human.d990f50.svg" alt="">
+                    <span class="login-text">Đăng nhập</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== Product tu nha ========================== -->
+        <div id="content-container">
+            <div class="container class-section">
+                <div class="product__container">
+                    <div class="product__list--header">
+                        <h1 class="title"><i class="fas fa-trophy"></i>Sản phẩm từ Nhà</h1>
+                    </div>
+                    <div class="product__list--type">
+                        <div class="product-menu " href="#" >
+                            <div id="changeBgcolor" class="product-menu--image menuTablinks"   onclick="openMenu(event, 'Best')">
+                                <img class=""src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/ca-phe.png" alt="">
+                            </div>
+                            <div class="product-menu--name">
+                                <p>Đang được yêu thích</p>
+                            </div>
+                        </div>
+    
+                        <div class="product-menu " href="#" >
+                            <div id="changeBgcolor" class="product-menu--image menuTablinks" onclick="openMenu(event, 'Coffee')">
+                                <img class=""src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/tra-trai-cay-tra-sua.png" alt="">
+                            </div>
+                            <div class="product-menu--name">
+                                <p>Cà phê</p>
+                            </div>
+                        </div>
+    
+                        <div class="product-menu " href="#" >
+                            <div id="changeBgcolor" class="product-menu--image menuTablinks" onclick="openMenu(event, 'Fruittea')">
+                                <img class=""src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/da-xa.png" alt="">
+                            </div>
+                            <div class="product-menu--name">
+                                <p>Trà trái cây - trà sữa</p>
+                            </div>
+                        </div>
+    
+                        <div class="product-menu " href="#">
+                            <div id="changeBgcolor" class="product-menu--image menuTablinks" onclick="openMenu(event, 'Choco')">
+                                <img class=""src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/ca-phe-goi-ca-phe-uong-lien.png" alt="">
+                            </div>
+                            <div class="product-menu--name">
+                                <p>Đá say - Choco - Matcha</p>
+                            </div>
+                        </div>
+    
+                        <div class="product-menu" href="#">
+                            <div id="changeBgcolor" class="product-menu--image menuTablinks" onclick="openMenu(event, 'Snack')">
+                                <img class=""src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/banh-snack.png" alt="">
+                            </div>
+                            <div class="product-menu--name">
+                                <p>Bánh - Snack</p>
+                            </div>
+                        </div>
+    
+                        <div class="product-menu menuTablinks" href="#">
+                            <div id="changeBgcolor" class="product-menu--image menuTablinks" onclick="openMenu(event, 'Gift')">
+                                <img class=""src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/bo-suu-tap-qua-tang.png" alt="">
+                            </div>
+                            <div class="product-menu--name">
+                                <p>Bộ sưu tập quà tặng</p>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <!-- DRINK MENU -->
+                    <!-- BEST SELLER -->
+                    <div id="Best" class="drink__menu best-drink menu-special-show">
+                        <a href="./orderlist/order1.html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img3/cafesuada- menulandingpage.(1).jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Cà Phê Sữa Đá </p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">29.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+        
+                            <a href="./orderlist/order1(2).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/cafesuanong- menulandingpage.(2).jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Cà Phê Sữa Nóng</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">35.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+        
+                            <a href="./orderlist/order1(3).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/bacxiu- menulandingpage.(3).jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Bạc Sỉu</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">29.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+        
+                            <a href="./orderlist/order1(4).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/bacxiunong- menulandingpage.(4).jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Bạc Sỉu Nóng</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">35.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+        
+                            <a href="./orderlist/order1(5).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/cafedenda- menulandingpage.(5).jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Cà Phê Đen Đá</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">29.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+        
+                            <a href="./orderlist/order1(6).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/cafedennong- menulandingpage.(6).jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Cà Phê Đen Nóng</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">35.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+        
+                    </div>
+    
+                    <!-- 2===================== -->
+                    <div id="Coffee" class="drink__menu best-drink">
+                        <a href="./orderlist/order5.html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img3/1638332240_tra-sua-chai-tran-chau-lanh_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Trà Sữa Masala Chai Trân Châu(Đá)</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">59.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+        
+                            <a href="./orderlist/order5(2).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/1638332229_tra-sua-chai-nong_400x400.jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Trà Sữa Masala Chai(Nóng)</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">59.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+        
+                            <a href="./orderlist/order5(3).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/tra-dao-cam-xa_668678_400x400.jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Trà Đào Cam Sả - Đá</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">45.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+        
+                            <a href="./orderlist/order5(4).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/tdcs-nong_288997_400x400.jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Trà Đào Cam Sả - Nóng</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">52.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+        
+                            <a href="./orderlist/order5(5).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/tra-sen_905594_400x400.jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Trà Hạt Sen - Đá</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">45.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="./orderlist/order5(6).html" class="drink-menu-link">
+                                <div class="drink-item">
+                                    <div class="drink-item-container">
+                                        <div class="drink-item__image">
+                                            <img src="img3/tra-sen-nong_025153_400x400.jpg" alt="">
+                                        </div>
+                                        <div class="drink-item__content">
+                                            <div class="drink-name">
+                                                <p class="name">Trà Hạt Sen - Nóng</p>
+                                            </div>
+                                            <div class="drink-price">
+                                                <p class="price">52.000đ</p>
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                    </div>
+    
+                    <!-- 3======================================= -->
+                    <div id="Fruittea" class="drink__menu best-drink">
+                        <a href="./orderlist/order3.html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img4/cf-da-xay-(1)_158038_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Cà Phê Đá Xay-Lạnh</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">59.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+            
+                        <a href="./orderlist/order3(2).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img4/1638170021_cookie-da-xay_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Cookie Đá Xay</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">59.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+            
+                        <a href="./orderlist/order3(3).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img4/Chocolate-ice-blended_400940_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Chocolate Đá Xay</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">59.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order3(4).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img4/cam-pbt-da-xay_326000_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Phúc Bồn Tử Cam Đá Xay</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">59.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order3(5).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img4/Chanh-sa-da-xay_170980_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Chanh Sả Đá Xay</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">49.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order3(6).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img4/DaoVietQuat_033985_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Đào Việt Quất Đá Xay</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">59.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <!-- CHOCO -->
+                    <div id="Choco" class="drink__menu best-drink">
+                        <a href="./orderlist/order6.html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img5/cf damviviet.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name" >Cà Phê Hoà Tan Đậm Vị Việt (18 gói x 16 gam)</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">48.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order6(2).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img5/combo3hopcafehoatan.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Combo 3 Hộp Cà Phê Hòa Tan Đậm Vị Việt</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">109.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order6(3).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img5/cf-rang.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Cà Phê Rang Xay Original 1</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">60.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order6(4).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img5/combo-2cfrang.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Combo 2 Cà Phê Rang Xay Original 1</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">99.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order6(5).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img5/cfsdhoatan.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Cà Phê Sữa Đá Hòa Tan</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">44.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order6(6).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img5/combo3-cfsdhoatan.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Combo 3 Hộp Cà Phê Sữa Đá Hòa Tan</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">109.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <!-- SNACK -->
+                    <div id="Snack" class="drink__menu best-drink">
+                        <a href="./orderlist/order4.html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="https://minio.thecoffeehouse.com/image/admin/mit-say_666228_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Cà Phê Sữa Đá Chai Fresh 250ML</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">79.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order4(2).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="https://minio.thecoffeehouse.com/image/admin/kho-ga-la-chanh_995862_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Cà Phê Sữa Đá Chai Fresh 250ML</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">79.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <!-- GIFT -->
+                    <div id="Gift" class="drink__menu best-drink">
+                        <a href="./orderlist/order2.html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img6/lyinoxden.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Ly Inox Ống Hút Đen Nhám</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">280.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order2(2).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img6/lyinoxxanhduong.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Ly Inox Ống Hút Xanh Biển</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">280.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./orderlist/order2(3).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img6/lyinoxhaimau.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Ly Inox Ống Hút Hồng Xanh</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">280.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order2(4).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img6/thum-dua_661718_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Bình Giữ Nhiệt Inox Con Thuyền</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">300.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order2(5).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img6/con-thuyen_238139_400x400.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Bình Giữ Nhiệt Inox Con Thuyền</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">300.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+    
+                        <a href="./orderlist/order2(6).html" class="drink-menu-link">
+                            <div class="drink-item">
+                                <div class="drink-item-container">
+                                    <div class="drink-item__image">
+                                        <img src="img6/lycupcao.jpg" alt="">
+                                    </div>
+                                    <div class="drink-item__content">
+                                        <div class="drink-name">
+                                            <p class="name">Ly Farm To Cup(Thấp)</p>
+                                        </div>
+                                        <div class="drink-price">
+                                            <p class="price">150.000đ</p>
+                                            <i class="fas fa-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- NEWS==================================== -->
+            <div id="quote-main">
+                <div class="class-section">
+                    <div id="quote-heading">
+                        <div id="quote-header">
+                                <span class="quote-header__icon"><i class="fas fa-newspaper"></i></span>
+                                <span class="quote-header__text">Tin tức</span>
+                        </div>
+                    </div>
+                <div id="quote-layout">
+                    <div id="first-container">
+                        <img class="first-container__picture" src="img-news/APPNEWS.jpg" alt="">
+                        <div class="first-content">
+                            <h4 class="first-content__length">CÀ PHÊ 3IN1 MỚI - ĐẬM VỊ VIỆT, TỈNH TÁO TỨC THÌ</h4>
+                            <p class="first-content__text">Ngày 15/01/2021, The Coffee House chính thức ra mắt phiên bản App mới với mong muốn tối ưu trải nghiệm.</p>                
+                            <a href="./tin tức link/news1.html"><button class="btn--continute">Đọc tiếp</button></a>                
+                        </div>
+                    </div>
+        
+                    <div id="first-container">
+                        <img class="first-container__picture" src="img-news/app-news-1.jpg" alt="">
+                        <div class="first-content">
+                            <h4 class="first-content__length">FESTIVE COLLECTION - THÊM GẮN KẾT TRAO VỊ YÊU THƯƠNG</h4>
+                            <p class="first-content__text">Ngày 15/01/2021, The Coffee House chính thức ra mắt phiên bản App mới với mong muốn tối ưu trải nghiệm.</p>
+                            <a href="./tin tức link/news2.html"><button class="btn--continute">Đọc tiếp</button></a>
+                        </div>      
+                    </div>
+        
+                    <div id="first-container">
+                        <img class="first-container__picture" src="img-news/appnews--2--3.jpg" alt="">
+                        <div class="first-content">
+                            <h4 class="first-content__length">TEAROMA CRUSH NHÀ: TỰ TIN SỐNG TRẺ BỪNG PHONG CÁCH</h4>
+                            <p class="first-content__text">Ngày 15/01/2021, The Coffee House chính thức ra mắt phiên bản App mới với mong muốn tối ưu trải nghiệm.</p>
+                            <a href="./tin tức link/news3.html"><button class="btn--continute">Đọc tiếp</button></a>
+                        </div>
+                    </div>
+        
+                    <div id="first-container">
+                        <img class="first-container__picture" src="img-news/NEWS--4-.jpg" alt="">
+                        <div class="first-content">
+                            <h4 class="first-content__length">HẠT CÀ PHÊ ROBUSTA & NHỮNG ĐIỀU THÚ VỊ CÓ THỂ BẠN CHƯA BIẾT</h4>
+                            <p class="first-content__text">Ngày 15/01/2021, The Coffee House chính thức ra mắt phiên bản App mới với mong muốn tối ưu trải nghiệm.</p>
+                            <a href="./tin tức link/news4.html"><button class="btn--continute">Đọc tiếp</button></a>
+                        </div>
+                    </div>
+        
+                    <div id="first-container">
+                        <img class="first-container__picture" src="img-news/APP-NEWS--14-.jpg" alt="">
+                        <div class="first-content">
+                            <h4 class="first-content__length">TEAROMA CRUSH NHÀ MÌNH - THƠM BỪNG HỨNG KHỞI</h4>
+                            <p class="first-content__text">Ngày 15/01/2021, The Coffee House chính thức ra mắt phiên bản App mới với mong muốn tối ưu trải nghiệm.</p>
+                            <a href="./tin tức link/news5.html"><button class="btn--continute">Đọc tiếp</button></a>
+                        </div>
+                    </div>
+        
+                    <div id="first-container">
+                        <img class="first-container__picture" src="img-news/NEWS--3-.jpg" alt="">
+                        <div class="first-content">
+                            <h4 class="first-content__length">HÔM NAY MÌNH CÀ PHÊ ORIGINAL 1 NHÉ!</h4>
+                            <p class="first-content__text">Ngày 15/01/2021, The Coffee House chính thức ra mắt phiên bản App mới với mong muốn tối ưu trải nghiệm.</p>
+                            <a href="./tin tức link/news6.html"><button class="btn--continute">Đọc tiếp</button></a>
+                        </div>
+                    </div>
+        
+                    <div id="first-container">
+                        <img class="first-container__picture" src="img-news/APP-NEWS--13-.jpg" alt="">
+                        <div class="first-content">
+                            <h4 class="first-content__length">CRUSH NHÀ MÌNH</h4>
+                            <p class="first-content__text">Ngày 15/01/2021, The Coffee House chính thức ra mắt phiên bản App mới với mong muốn tối ưu trải nghiệm.</p>             
+                            <a href="./tin tức link/news7.html"><button class="btn--continute">Đọc tiếp</button></a>  
+                        </div>
+                    </div>
+                    <div id="first-container">
+                        <img class="first-container__picture" src="img-news/APP-NEWS--11-.jpg" alt="">
+                        <div class="first-content">
+                            <h4 class="first-content__length">ĐẬM ĐÀ HỒN CÀ PHÊ CỦA NÚI RỪNG</h4>
+                            <p class="first-content__text">Ngày 15/01/2021, The Coffee House chính thức ra mắt phiên bản App mới với mong muốn tối ưu trải nghiệm.</p>      
+                            <a href="./tin tức link/news8.html"><button class="btn--continute">Đọc tiếp</button></a>            
+                        </div>
+                    </div>
+                </div>    
+                <div class="see-all">
+                    <a href="./lastestnews/coffe2.html" class="continue-link">
+                        <p class="continue">Xem tất cả</p>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- FOOTER BANNER -->
+        <section class="coffee-middle">
+            <div class="coffee-middle__container">
+                <div class="coffee-middle__container__box--top">
+                    <img src="https://order.thecoffeehouse.com/_nuxt/img/cf-bg.2a2088b.svg">
+                </div>
+                <div class="coffee-middle__container__box--bottom">
+                    <div class="coffee-middle__container__box--bottom--first">
+                        <div class="coffee-middle__container__box--bottom--text">
+                            <div class="coffee-middle__container__box--bottom--logo">
+                                <img src="https://order.thecoffeehouse.com/_nuxt/img/squarelogo.035676b.png" width="100" alt>
+                            </div>
+                            <div class="coffee-middle__container__box--bottom--text--right">
+                                <p class="first-box__text">
+                                    Đặt qua app THE COFFEE HOUSE để tích 
+                                    <br class="first-box__text--br">điểm và hưởng quyền lợi thành viên.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="coffee-first-box--bottom--logo">
+                            <a class="logo__appstore">
+                                <div class="first__logo">
+                                    <img src="https://order.thecoffeehouse.com/_nuxt/img/app-store-2.a04cf2b.png" width="100">
+                                </div>
+                            </a>
+                            <a class="logo__chplay">
+                                <div class="second__logo">
+                                    <img src="https://order.thecoffeehouse.com/_nuxt/img/google-play-2.9945b62.png" width="100">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="coffee-second-box--bottom">
+                        <div class="coffee-second-box__column--bottom">
+                            <div class="coffee-second-box__column--bottom--fade">
+                                <img class="coffee__column"src="https://order.thecoffeehouse.com/_nuxt/img/newappv6.f2e1281.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coffee-third-box-bottom">
+                        <div class=""></div>
+                    </div>
+                </div>              
+            </div>
+        </section>
+        
+        <div id="footer-container">
+            <div class="footer-menu-container">
+                <div class="item-flex class-section footer-menu-list">   
+                    <div class="footer-menu-logo">
+                        <img src="https://order.thecoffeehouse.com/_nuxt/img/logo-footer.72c86fc.png" alt="Logo">
+                    </div>
+                    <div class="footer-menu__list">
+                        <ul class="item-list">
+                            <li><i class="footer-icon ti-plus"></i> Thông tin website</li>
+                            <li><i class="footer-icon ti-plus"></i> Điều khoản sử dụng</li>
+                            <li><i class="footer-icon ti-plus"></i> Hotline</li>
+                            <li><i class="footer-icon ti-plus"></i> Liên hệ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-container">
+                    <div class="container item-flex">
+                    <div class="copyright-content">
+                        <p class="content">Copyright © 2021 The Coffee House. All rights reserved.</p>
+                    </div>
+                    <div class="copyright-image">
+                        <img src="https://order.thecoffeehouse.com/_nuxt/img/active.4cba64f.png" alt="">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-footer" style="padding-top: 60px;"></div>
+
+    <!-- FOOTER MOBILE MENU -->
+    <div class="footer-mobile-menu">
+        <ul class="mobile-menu-list">
+            <a class="item-link" href="#"> 
+                <i class="fas fa-home"></i>
+                <h4>Trang chủ</h4>
+            </a>
+            <a class="item-link" href="./dathang.html"> 
+                <i class="fas fa-mug-hot"></i>  
+                <h4>Đặt hàng</h4> 
+            </a>
+            <a class="item-link" href="./lastestnews/coffe2.html"> 
+                <i class="fas fa-newspaper"></i>
+                <h4>Tin tức</h4>
+            </a>
+            <a class="item-link" href="./cuahang.html"> 
+                <i class="fas fa-store"></i>
+                <h4>Cửa hàng</h4>
+            </a>
+        </ul>
+    </div>
+    <!-- ========================== -->
+    <div id="voucherModal" class="sale">
+        <div class="sale__modal">
+            <div class="sale__modal__content">
+                <div class="sale__modal__content__header">
+                    <span id="voucherClose" class="modal__icon">
+                        <i class="fas fa-times"></i>
+                    </span>
+                    <h5 class="modal__title">Khuyến mãi</h5>
+                </div>
+                <div class="sale__modal__content__body">
+                    <div class="sale__modal__content__body__input">
+                        <img class="input__scan"src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDBIMThWNUgxNlYySDEyVjBaTTYgMFYySDJWNUgwVjBINlpNMTIgMThWMTZIMTZWMTNIMThWMThIMTJaTTYgMThIMFYxM0gyVjE2SDZWMThaTTAgOEgxOFYxMEgwVjhaIiBmaWxsPSIjRkE4QzE2Ii8+Cjwvc3ZnPgo=" alt>
+                        <input type="text" placeholder="Nhập mã khuyến mãi" class="input__form">
+                        <div class="input__button">
+                            <button class="input__button--gray">
+                                <span class="input__button__text">Áp dụng</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sale__modal__content__body__substance">
+                        <div class="sale__modal__tittle">
+                            <h6 class="sale__modal__text--top">Sẵn sàng sử dụng</h6>
+                        </div>
+                        <div class="sale__modal__coupon">
+                            <!-- coupon box 1 -->
+                            <div class="coupon__box">
+                                <div class="coupon__box__content">
+                                    <div class="coupon__box--left">
+                                        <img class="coupon__img" src="https://minio.thecoffeehouse.com/image/admin/coupou-all-15_829041.jpg" alt>
+                                    </div>
+                                    <div class="coupon__box--right">
+                                        <p class="coupon__box__text--right">Giảm 15% từ 3 sản phẩm Cà phê đóng gói/Lon & nước</p>
+                                        <p class="coupon__box__expiry--right">Hết hạn 30/11/2021</p>
+                                        <span class="coupon__box__expiry--done">Sử dụng ngay</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- coupon box 2 -->
+                            <div class="coupon__box">
+                                <div class="coupon__box__content">
+                                    <div class="coupon__box--left">
+                                        <img class="coupon__img" src="https://minio.thecoffeehouse.com/image/admin/coupou-all-10(2)_849394.jpg" alt>
+                                    </div>
+                                    <div class="coupon__box--right">
+                                        <p class="coupon__box__text--right">Giảm 10% 2 sản phẩm Cà phê đóng gói/Lon & nước đón</p>
+                                        <p class="coupon__box__expiry--right">Hết hạn 30/11/2021</p>
+                                        <span class="coupon__box__expiry--done">Sử dụng ngay</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- coupon box 3 -->
+                            <div class="coupon__box">
+                                <div class="coupon__box__content">
+                                    <div class="coupon__box--left">
+                                        <img class="coupon__img" src="https://minio.thecoffeehouse.com/image/admin/storage/694_Coupon_20All_2050_.jpg" alt>
+                                    </div>
+                                    <div class="coupon__box--right">
+                                        <p class="coupon__box__text--right">Giảm 50% bánh đơn 1 nước size lớn nhất</p>
+                                        <p class="coupon__box__expiry--right">Hết hạn 30/11/2021</p>
+                                        <span class="coupon__box__expiry--done">Sử dụng ngay</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- coupon box 4 -->
+                            <div class="coupon__box">
+                                <div class="coupon__box__content">
+                                    <div class="coupon__box--left">
+                                        <img class="coupon__img" src="https://minio.thecoffeehouse.com/image/admin/coupou-all-15_829041.jpg" alt>
+                                    </div>
+                                    <div class="coupon__box--right">
+                                        <p class="coupon__box__text--right">Giảm 30K đơn từ 129K</p>
+                                        <p class="coupon__box__expiry--right">Hết hạn 30/11/2021</p>
+                                        <span class="coupon__box__expiry--done">Sử dụng ngay</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- coupon box 5 -->
+                            <div class="coupon__box">
+                                <div class="coupon__box__content">
+                                    <div class="coupon__box--left">
+                                        <img class="coupon__img" src="https://minio.thecoffeehouse.com/image/tchmobileapp/374_icon_placeholder_img_defaut%403x.png" alt>
+                                    </div>
+                                    <div class="coupon__box--right">
+                                        <p class="coupon__box__text--right">Giảm 15% trên tổng đơn hàng_04</p>
+                                        <p class="coupon__box__expiry--right">Hết hạn 30/11/2021</p>
+                                        <span class="coupon__box__expiry--done">Sử dụng ngay</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Voucher Modal js ======== -->
+    <script>
+        var modal = document.getElementById("voucherModal");
+        var voucherOpen = document.getElementById("voucherMenu");
+        var voucherClose = document.getElementById("voucherClose");
+
+        // Mo voucher modal
+        function voucherOpenFunction() {
+            modal.style.display = "block";
+        }
+        voucherOpen.addEventListener("click", voucherOpenFunction);
+
+        // Dong voucher modal khi click vao X
+        function voucherCloseFunction() {
+            modal.style.display = "none";
+        }
+        voucherClose.addEventListener("click", voucherCloseFunction);
+
+        // Dong voucher modal khi click ra ben ngoai modal
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+    <!-- DRINK MENU MOVE -->
+    <script>
+        function openMenu(event, type) {
+            var i, menuTablinks, menuTabcontent; 
+            menuTabcontent = document.getElementsByClassName("best-drink");
+            for (i = 0; i < menuTabcontent.length; i++) {
+                menuTabcontent[i].style.display = "none";
+            }
+            menuTablinks = document.getElementsByClassName("menuTablinks");
+            for (i = 0; i < menuTablinks.length; i++) {
+                menuTablinks[i].className = menuTablinks[i].className.replace(" active", " ");
+            }
+            document.getElementById(type).style.display = "flex";
+            event.currentTarget.className += " active"
+        }
+    </script>
+    
+
+    <!-- Thay doi mau khi an vao icon menu -->
+    <script>
+        // var header = document.getElementById("changeBgcolor");
+        var btns = document.getElementsByClassName("product-menu--image");
+        for (i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName(" active");
+                current[0].className = current[0].className.replace(" active", " ");
+                this.className += " active";
+            });
+        }
+    </script>
+
+    <script>
+        var suggestClick = document.getElementById("suggestClick");
+        var nearlyClick = document.getElementById("nearlyClick")
+        var showNearly = document.getElementById("nearly")
+        // Show gan day
+        function showNearlyFunction() {
+            showNearly.style.display = "block";
+        } 
+        nearlyClick.addEventListener("click", showNearlyFunction);
+
+        // An gan day
+        function offNearlyFunction() {
+            showNearly.style.display = "none";
+        }
+        suggestClick.addEventListener("click", offNearlyFunction);
+    </script>
+<!-- 
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slider__imgs");
+        var dots = document.getElementsByClassName("dot-item");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        } -->
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.special {
+    background: #fa8c16;
+    border-radius: 50px;
+    color: #fff !important;
+    padding: 3px 2px;
+}
+
+.tch-store-list .tch-store-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    align-items: baseline;
+    line-height: 37px;
+}
+
+.tch-store-list .tch-store-item .tch-store-name {
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fa8c16;
+}
+
+
+.tch-input-container {
+    display: flex;
+}
+
+.tch-input-container .tch-selection-distric, .tch-store-info {
+    width: 40%;
+    height: 44px;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    margin-right: 6px;
+    padding-left: 10px;
+}
+
+.tch-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.tch-store-main-wrap {
+
+}
+
+.tch-store-main-wrap .tch-store-main-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store-header {
+    padding: 50px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tch-input-container {
+    padding: 20px 0;
+}
+
+.store-header .title {
+    margin-left: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+
+.tch-store-main-wrap .tch-store-main-list .tch-store-main-item {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    margin-bottom: 24px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.tch-store-main-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.store-intro {
+    display: flex;
+}
+
+.tch-store-main-wrap .tch-store-main-list .tch-store-main-item .store-img {
+    background: url(https://minio.thecoffeehouse.com/image/admin/store/5b21f8cb1acd4d02032668d8_5b21f8cb1acd4d02032668d8_kim_20ma.jpeg);
+    padding-top: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.store-info {
+    flex: 1;
+    margin-left: 16px;
+    line-height: 20px;
+    line-height: 22px;
+}
+
+.store-trademark {
+    color: #838387;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.store-address {
+    line-height: 22px;
+}
+
+.store-distance {
+    color: rgba(38,38,38,.3);
+    font-size: 14px;
+}
+
+.store-view-link {
+    color: #fa8c16;
+    display: flex;
+    width: 75%;
+}
+
+.store-view-map:after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 0.6px;
+    background: #fa8c16;
+    transform: translate(14px,20%);
+}
+
+.store-view-detail {
+    margin-left: 30px;
+}
+

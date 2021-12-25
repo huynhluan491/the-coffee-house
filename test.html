@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <section class="tch-value">
+        <div class="class-section">
+            <div class="value-container">
+                <h1 class="title">4 giá trị làm nên The Coffe House</h1>
+                <div class="value-btn-container">
+                    <div class="tablinks btn-item">
+                        <div class="btn-name" onclick="openQuote(event, 'Care')">Quan Tâm</div>
+                    </div>
+                    <div class="tablinks btn-item">
+                        <div class="btn-name" onclick="openQuote(event , 'Creative')" >Sáng Tạo</div>
+                    </div>
+                    <div class="tablinks btn-item">
+                        <div class="btn-name" onclick="openQuote(event, 'Kind')">Chân Thành</div>
+                    </div>
+                    <div class="tablinks btn-item">
+                        <div class="btn-name" onclick="openQuote(event, 'Brave')">Dũng Cảm</div>
+                    </div>
+                </div>
+                <div class="value-content-container">
+                    <div id="Care" class="value-content-item">
+                        <div class="quote">
+                            <p>Một giá trị kết nối con người với con người mà chúng tôi luôn tự hào đó là Quan tâm chân thành. Chúng tôi đặt cả ân cần và chăm chút trong từng tách cà phê đến khách hàng, lo cùng nỗi lo vui cùng niềm vui của người nông dân theo từng mùa vụ. Mỗi nhân viên mang bản sắc khác biệt, tất cả đều được chào đón tại Nhà Cà Phê, và hơn hết là cùng khách hàng đóng góp thật nhiều điều tốt đẹp cho cộng đồng lớn, cùng nhau lan toả nó mạnh mẽ hơn mỗi ngày.</p>
+                            <div class="seemore-btn">
+                                <button class="btn">Xem Thêm</button>
+                            </div>
+                        </div>
+                        <div class="value-img1"></div>
+                    </div>
+
+                    <!--  -->
+                    <div id="Creative" class="value-content-item">
+                        <div class="quote">
+                            <p>Tiếp nối và song hành cùng giá trị Quan tâm, Chân thành và Dũng cảm, mỗi ngày mỗi giờ tại The Coffee House là sự vận hành không ngừng đổi mới, học hỏi, sáng tạo và ứng dụng nhiều công nghệ hiện đại để mang đến những trải nghiệm mới mẻ hơn, nhiều tiện ích hơn cho khách hàng.</p>
+                            <div class="seemore-btn">
+                                <button class="btn">Xem Thêm</button>
+                            </div>
+                        </div>
+                        <div class="value-img2"></div>
+                    </div>
+
+                    <!--  -->
+
+                    <div id="Kind" class="value-content-item">
+                        <div  class="quote">
+                            <p>Mọi quyết định, lời nói, hành động của nhân viên Nhà Cà Phê luôn lấy sự Chân thành, thật tâm làm cốt lõi. Vì chúng tôi tin rằng, hành trình từ sự chân thành mới là hành trình thật sự bền vững và đủ để lan toả mạnh mẽ những điều tốt đẹp cho cộng đồng.</p>
+                            <div class="seemore-btn">
+                                <button class="btn">Xem Thêm</button>
+                            </div>
+                        </div>
+                        <div class="value-img3"></div>
+                    </div>
+
+                    <!--  -->
+                    <div id="Brave" class="value-content-item">
+                        <div class="quote">
+                            <p>Cũng trên hành trình này, chúng tôi kiên định với đam mê làm cà phê tử tế, dám ước mơ về 1 tương lai có thể đưa hạt cà phê Việt Nam vươn tầm thế giới. Cùng nhau đương đầu với những khó khăn, chúng tôi dám nghĩ, dám làm trong mọi thử thách. Chúng tôi đối diện với thay đổi và vận hành với tốc độ.</p>
+                            <div class="seemore-btn">
+                                <button class="btn">Xem Thêm</button>
+                            </div>
+                        </div>
+                        <div class="value-img4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openQuote(evt, property) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("value-content-item");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(property).style.display = "flex";
+            evt.currentTarget.className += " active"
+        }
+    </script>
+</body>
+</html>
